@@ -9,14 +9,93 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
-      #pow{
+      body{
+        background: #3606D4;
+      }
+      #pow, .msg{
           display: block;
           margin: auto;
+      }
+      label, .msg{
+        font-family: 'Roboto', sans-serif;
+        color: #a49dba;
+      }
+      .progress-section, .msg{
+        width: 600px;
+        margin: 10px auto 0;
+        text-align: center;
+      }
+      .msg{
+        padding:0 0 20px;
+        color:#fff;
+      }
+
+      progress {
+        background-color: #654db6;
+        color: #654db6;
+        border: 0;
+        height: 14px;
+        border-radius: 5px;
+
+      }
+      progress::-moz-progress-bar {
+        background: #fff;
+        border-radius: 11px;
+        height: 14px;
+      }
+      .progress-label{
+        display: block;
       }
     </style>
   </head>
   <body>
-	<img id="pow" src="img/pow.jpg" />
+	<img id="pow" src="img/pow.png" />
+  </div>
+  <div class="msg">2022.03.03 — Lots to go!</div>
   </body>
+  <div class="progress-section">
+    <label class="progress-label" for="file">Design</label>
+    <progress id="file" value="5" max="100">4%</progress>
+  </div>
+  <div class="progress-section">
+    <label class="progress-label" for="file">Database</label>
+    <progress id="file" value="0" max="100">0%</progress>
+  </div>
+  <div class="progress-section">
+    <label class="progress-label" for="file">Auth</label>
+    <progress id="file" value="0" max="100">0%</progress>
+  </div>
+  <div class="progress-section">
+    <label class="progress-label" for="file">Organizer Verification</label>
+    <progress id="file" value="0" max="100">0%</progress>
+  </div>
+  <div class="progress-section">
+    <label class="progress-label" for="file">Email System</label>
+    <progress id="file" value="0" max="100">0%</progress>
+  </div>
+  <div class="progress-section">
+    <label class="progress-label" for="file">Payment System</label>
+    <progress id="file" value="0" max="100">0%</progress>
+  </div>
+  <div class="progress-section">
+    <label class="progress-label" for="file">Dashboard</label>
+    <progress id="file" value="0" max="100">0%</progress>
+  </div>
+  <div class="progress-section">
+    <label class="progress-label" for="file">Forms</label>
+    <progress id="file" value="0" max="100">0%</progress>
+  </div>
+  <div class="progress-section">
+    <label class="progress-label" for="file">Check-In</label>
+    <progress id="file" value="0" max="100">0%</progress>
+  </div>
+  <div class="progress-section">
+    <label class="progress-label" for="file">Front Page</label>
+    <progress id="file" value="0" max="100">0%</progress>
+  
+
 </html>
