@@ -14,41 +14,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
       body{
-        background: #3606D4;
-      }
-      #pow, .msg{
+          background: #3606D4;
+        }
+        progress {
+          background-color: #654db6;
+          color: #654db6;
+          border: 0;
+          height: 14px;
+          border-radius: 5px;
+
+        }
+        .msg{
+          padding:0 0 20px;
+          color:#fff;
+        }
+        
+        progress::-moz-progress-bar {
+          background: #fff;
+          border-radius: 11px;
+          height: 14px;
+        }
+        .progress-label{
           display: block;
-          margin: auto;
+        }
+        #pow, .msg{
+            display: block;
+            margin: auto;
+        }
+        label, .msg{
+          font-family: 'Roboto', sans-serif;
+          color: #a49dba;
+        }
+      @media only screen and (min-width: 600px) {        
+        
+        .progress-section, .msg{
+          width: 600px;
+          margin: 10px auto 0;
+          text-align: center;
+        }
+        
       }
-      label, .msg{
-        font-family: 'Roboto', sans-serif;
-        color: #a49dba;
-      }
-      .progress-section, .msg{
-        width: 600px;
-        margin: 10px auto 0;
-        text-align: center;
-      }
-      .msg{
-        padding:0 0 20px;
-        color:#fff;
-      }
-
-      progress {
-        background-color: #654db6;
-        color: #654db6;
-        border: 0;
-        height: 14px;
-        border-radius: 5px;
-
-      }
-      progress::-moz-progress-bar {
-        background: #fff;
-        border-radius: 11px;
-        height: 14px;
-      }
-      .progress-label{
-        display: block;
+      @media only screen and (max-width: 599px) {
+        #pow{
+          width: 76%;
+          height: 76%;
+        }
+        .progress-section, .msg{
+          width: 100%;
+          margin: 10px auto 0;
+          text-align: center;
+        }
       }
     </style>
   </head>
@@ -59,7 +74,7 @@
   </body>
   <div class="progress-section">
     <label class="progress-label" for="file">Design</label>
-    <progress id="file" value="5" max="100">4%</progress>
+    <progress id="file" value="4" max="100">3%</progress>
   </div>
   <div class="progress-section">
     <label class="progress-label" for="file">Database</label>
